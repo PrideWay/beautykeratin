@@ -1,0 +1,256 @@
+@charset "utf-8";
+/*
+Theme Name: BeautyKeratin
+Theme URI: http://beautykeratin.ru/
+Author: Zakhar Serkov
+Author URI: https://wordpress.org/
+Description: Тема для сайта BeautyKeratin.ru.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: beautykeratin
+
+*/
+@font-face {
+  font-family: 'segoe';
+  src: url('fonts/segoe-ui.eot');
+  src: url('fonts/segoe-ui.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui.woff') format('woff'), url('fonts/segoe-ui.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'segoe';
+  src: url('fonts/segoe-ui-bold.eot');
+  src: url('fonts/segoe-ui-bold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-bold.woff') format('woff'), url('fonts/segoe-ui-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'segoe';
+  src: url('fonts/segoe-ui-italic.eot');
+  src: url('fonts/segoe-ui-italic.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-italic.woff') format('woff'), url('fonts/segoe-ui-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'playfair';
+  src: url('fonts/playfair-display-regular.eot');
+  src: url('fonts/playfair-display-regular.eot?#iefix') format('embedded-opentype'), url('fonts/playfair-display-regular.woff') format('woff'), url('fonts/playfair-display-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  float: none;
+  font-family: 'segoe';
+}
+*::before,
+*::after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+a {
+  transition: 0.1s;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'segoe';
+  font-weight: normal;
+  font-size: 14px;
+  color: #3e3e3d;
+  line-height: 1.3;
+  background: #fff url(img/bg/wall.jpg);
+}
+.clear {
+  clear: both;
+  height: 0px;
+  float: none;
+}
+.checkin {
+  text-align: right;
+  margin-top: 5px;
+}
+.checkin a {
+  background: #f170c0;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 21px;
+  padding: 7px 22px 9px;
+  text-align: center;
+  display: inline-block;
+  line-height: 1;
+}
+.checkin a:hover {
+  background-color: #b5167f;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  text-align: left;
+  position: relative;
+  min-height: 100%;
+  min-width: 320px;
+  width: 100%;
+}
+.hf.top_line {
+  text-align: center;
+}
+.hf.top_line .sociaz .icons {
+  margin-top: 22px;
+  font-size: 0;
+  white-space: nowrap;
+}
+.hf.top_line .logo a {
+  display: inline-block;
+  margin-top: 25px;
+}
+.hf.top_line .td {
+  width: 33%;
+  vertical-align: top;
+}
+.hf.top_line .phone {
+  text-align: right;
+  white-space: nowrap;
+}
+.hf.top_line .phone p {
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.hf.top_line .phone a.aphone {
+  color: #27292b;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 30px;
+  background: url(img/ico/phone_top.png) left 13px no-repeat;
+}
+.hf.top_line .phone a.aphone span {
+  font-size: 21px;
+  color: #de33a1;
+}
+.innerwrapper {
+  min-width: 320px;
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.tbl {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+.tbl .td {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+}
+.iwrp {
+  padding: 0 10px;
+  overflow: hidden;
+}
+header {
+  padding-bottom: 15px;
+  -webkit-box-shadow: 0px 28px 50px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 28px 50px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 28px 50px 0px rgba(0, 0, 0, 0.15);
+}
+header .iwrp {
+  overflow: inherit;
+}
+header .menu_line {
+  text-align: center;
+  margin-top: 13px;
+}
+header .menu ul {
+  display: table;
+  width: 100%;
+}
+header .menu li {
+  display: table-cell;
+}
+header .menu li a {
+  white-space: nowrap;
+  font-size: 22px;
+}
+header .menu li.active a,
+header .menu li a:hover {
+  color: #b00978;
+  text-decoration: underline;
+}
+.sociaz .icons a {
+  display: inline-block;
+  vertical-align: top;
+  background: url(img/ico/sprite.png) 0 0 no-repeat;
+  text-indent: -99999px;
+  margin: 12px 3px 0;
+  transition: none;
+}
+.sociaz .icons a.soc3 {
+  width: 28px;
+  height: 28px;
+  background-position: -219px -16px;
+}
+.sociaz .icons a.soc3:hover {
+  background-position: -219px -105px;
+}
+.sociaz .icons a.soc4 {
+  width: 69px;
+  height: 45px;
+  background-position: -258px -4px;
+  margin: 0 0 0 8px;
+}
+.sociaz .icons a.soc4:hover {
+  background-position: -258px -93px;
+}
+.sociaz .table {
+  margin-top: 6px;
+}
+.sociaz .table span {
+  display: inline-block;
+  background: url(img/ico/sprite.png) -146px -55px no-repeat;
+  width: 172px;
+  height: 34px;
+}
+.share42init {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.share42init .soc1 a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: url(img/ico/icons.png) 0px 0 no-repeat;
+}
+.share42init .soc2 a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: url(img/ico/icons.png) -32px 0 no-repeat;
+}
+.share42-item {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  height: 32px;
+}
+/*# sourceMappingURL=style.css.map */
